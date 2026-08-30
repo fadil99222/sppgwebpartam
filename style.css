@@ -1,0 +1,1604 @@
+```css
+/* ==========================================================
+   STYLE WEBSITE
+   SPPG TAMALATE PARANG TAMBUNG 03
+   ========================================================== */
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+* {
+  box-sizing: border-box;
+}
+
+
+/* ==========================================================
+   ROOT
+   ========================================================== */
+
+:root {
+
+  --navy: #092b63;
+
+  --blue: #2d8ed8;
+
+  --light: #eef7ff;
+
+  --line: #d9e7f5;
+
+  --text: #102d57;
+
+  --muted: #6b7d94;
+
+  --red: #d32632;
+
+  --red-light: #fff2f3;
+
+  --green: #159447;
+
+  --green-light: #eaf9f0;
+
+}
+
+
+/* ==========================================================
+   BODY
+   ========================================================== */
+
+body {
+
+  margin: 0;
+
+  background: #edf3f9;
+
+  font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+  color: var(--text);
+
+}
+
+
+/* ==========================================================
+   PAGE
+   ========================================================== */
+
+.page {
+
+  max-width: 980px;
+
+  margin: auto;
+
+  background: white;
+
+  min-height: 100vh;
+
+  box-shadow:
+    0 0 35px
+    rgba(9, 43, 99, 0.08);
+
+  overflow: hidden;
+
+}
+
+
+/* ==========================================================
+   HEADER
+   ========================================================== */
+
+header {
+
+  position: relative;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  padding:
+    25px
+    20px
+    28px;
+
+  background:
+    linear-gradient(
+      #fff,
+      #f6fbff
+    );
+
+}
+
+
+/* NAVY SHAPE */
+
+header::before {
+
+  content: "";
+
+  position: absolute;
+
+  left: -10%;
+
+  right: -10%;
+
+  top: -115px;
+
+  height: 180px;
+
+  background:
+    var(--navy);
+
+  border-radius:
+    0 0 50% 50%;
+
+}
+
+
+/* BLUE LINE */
+
+header::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: -8%;
+
+  right: -8%;
+
+  top: -88px;
+
+  height: 165px;
+
+  border-bottom:
+    9px solid #8bc9ef;
+
+  border-radius:
+    0 0 50% 50%;
+
+}
+
+
+/* HEADER CONTENT */
+
+.header-content {
+
+  position: relative;
+
+  z-index: 2;
+
+}
+
+
+/* ==========================================================
+   LOGO
+   ========================================================== */
+
+.logo {
+
+  width: 105px;
+
+  height: 105px;
+
+  object-fit: contain;
+
+  margin: auto;
+
+  display: block;
+
+  filter:
+    drop-shadow(
+      0 6px 10px
+      rgba(0, 0, 0, 0.15)
+    );
+
+}
+
+
+/* ==========================================================
+   BADGE
+   ========================================================== */
+
+.badge {
+
+  display: inline-block;
+
+  margin-top: 12px;
+
+  padding:
+    7px 15px;
+
+  border-radius: 30px;
+
+  background:
+    var(--navy);
+
+  color: white;
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* ==========================================================
+   TITLE
+   ========================================================== */
+
+h1 {
+
+  margin:
+    10px 0 0;
+
+  font-size:
+    clamp(
+      28px,
+      6vw,
+      48px
+    );
+
+  line-height: 1.05;
+
+  color:
+    var(--navy);
+
+  letter-spacing:
+    -1px;
+
+}
+
+
+/* ==========================================================
+   SUBTITLE
+   ========================================================== */
+
+.subtitle {
+
+  margin:
+    10px 0 0;
+
+  font-size: 14px;
+
+  font-weight: bold;
+
+  color:
+    #49627f;
+
+}
+
+
+/* ==========================================================
+   CONTENT
+   ========================================================== */
+
+main {
+
+  padding:
+    0 20px 30px;
+
+}
+
+
+/* ==========================================================
+   CARD
+   ========================================================== */
+
+.card {
+
+  background: white;
+
+  border:
+    1px solid var(--line);
+
+  border-radius:
+    22px;
+
+  margin-top:
+    18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 6px 20px
+    rgba(9, 43, 99, 0.05);
+
+}
+
+
+/* ==========================================================
+   CARD TITLE
+   ========================================================== */
+
+.card-title {
+
+  background:
+    var(--navy);
+
+  color: white;
+
+  padding:
+    14px 18px;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  font-weight: 900;
+
+}
+
+
+/* TITLE ICON */
+
+.title-icon {
+
+  margin-right: 5px;
+
+}
+
+
+/* ==========================================================
+   DATE
+   ========================================================== */
+
+.date-box {
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content:
+    space-between;
+
+  gap: 15px;
+
+  padding: 17px;
+
+  background:
+    var(--light);
+
+  border:
+    1px solid #c5def5;
+
+  border-radius:
+    18px;
+
+  margin-top: 0;
+
+}
+
+
+/* DATE LABEL */
+
+.date-label {
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+  color:
+    var(--muted);
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    1px;
+
+}
+
+
+/* DATE */
+
+.date {
+
+  font-size: 20px;
+
+  font-weight: 900;
+
+  color:
+    var(--navy);
+
+  margin-top: 3px;
+
+}
+
+
+/* DATE ICON */
+
+.date-icon {
+
+  width: 50px;
+
+  height: 50px;
+
+  background:
+    var(--navy);
+
+  color: white;
+
+  border-radius:
+    14px;
+
+  display: grid;
+
+  place-items: center;
+
+}
+
+
+/* DATE SVG */
+
+.date-icon svg {
+
+  width: 25px;
+
+  height: 25px;
+
+  fill: none;
+
+  stroke: currentColor;
+
+  stroke-width: 1.8;
+
+  stroke-linecap: round;
+
+  stroke-linejoin: round;
+
+}
+
+
+/* ==========================================================
+   MENU
+   ========================================================== */
+
+.menu {
+
+  padding: 0;
+
+  margin: 0;
+
+  list-style: none;
+
+  counter-reset: item;
+
+}
+
+
+/* MENU ITEM */
+
+.menu li {
+
+  counter-increment: item;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  padding:
+    15px 18px;
+
+  border-bottom:
+    1px solid #e7eef6;
+
+  font-size: 17px;
+
+  font-weight: 800;
+
+}
+
+
+/* LAST */
+
+.menu li:last-child {
+
+  border-bottom: 0;
+
+}
+
+
+/* MENU NUMBER */
+
+.menu-number {
+
+  width: 35px;
+
+  height: 35px;
+
+  flex:
+    0 0 35px;
+
+  display: grid;
+
+  place-items: center;
+
+  background:
+    var(--light);
+
+  color:
+    var(--navy);
+
+  border-radius: 50%;
+
+  font-size: 14px;
+
+  font-weight: 900;
+
+}
+
+
+/* AUTO NUMBER */
+
+.menu-number::before {
+
+  content:
+    counter(item);
+
+}
+
+
+/* MENU TEXT */
+
+.menu-text {
+
+  line-height: 1.4;
+
+}
+
+
+/* ==========================================================
+   GIZI
+   ========================================================== */
+
+.table-wrapper {
+
+  overflow-x: auto;
+
+}
+
+
+/* TABLE */
+
+table {
+
+  width: 100%;
+
+  border-collapse:
+    collapse;
+
+  min-width:
+    650px;
+
+}
+
+
+/* TABLE CELL */
+
+th,
+td {
+
+  border:
+    1px solid #cbdbea;
+
+  padding:
+    12px 8px;
+
+  text-align:
+    center;
+
+}
+
+
+/* HEADER */
+
+th {
+
+  background:
+    #edf6fe;
+
+  font-size:
+    11px;
+
+  color:
+    var(--navy);
+
+}
+
+
+/* DATA */
+
+td {
+
+  font-size:
+    14px;
+
+  font-weight:
+    800;
+
+}
+
+
+/* FIRST COLUMN */
+
+td:first-child {
+
+  text-align:
+    left;
+
+  background:
+    #f8fbff;
+
+  font-weight:
+    900;
+
+}
+
+
+/* NOTE */
+
+.note {
+
+  padding:
+    0 18px 16px;
+
+  margin: 0;
+
+  font-size:
+    11px;
+
+  color:
+    var(--muted);
+
+  font-style:
+    italic;
+
+}
+
+
+/* ==========================================================
+   INFORMASI
+   ========================================================== */
+
+.info-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:
+    18px;
+
+}
+
+
+/* INFO CONTENT */
+
+.info-content {
+
+  padding:
+    18px;
+
+}
+
+
+/* INFO BIG */
+
+.info-big {
+
+  font-size:
+    21px;
+
+  font-weight:
+    900;
+
+  color:
+    var(--navy);
+
+}
+
+
+/* INFO SMALL */
+
+.info-small {
+
+  font-size:
+    13px;
+
+  color:
+    var(--muted);
+
+  margin-top:
+    5px;
+
+  line-height:
+    1.5;
+
+}
+
+
+/* DESCRIPTION */
+
+.info-description {
+
+  font-size:
+    15px;
+
+  font-weight:
+    700;
+
+  color:
+    #304b70;
+
+}
+
+
+/* ==========================================================
+   WARNING
+   ========================================================== */
+
+.warning {
+
+  margin-top:
+    18px;
+
+  border:
+    2px solid var(--red);
+
+  border-radius:
+    22px;
+
+  overflow:
+    hidden;
+
+  background:
+    var(--red-light);
+
+}
+
+
+/* WARNING TITLE */
+
+.warning-title {
+
+  background:
+    var(--red);
+
+  color: white;
+
+  padding:
+    13px 16px;
+
+  font-weight:
+    900;
+
+  text-align:
+    center;
+
+}
+
+
+/* WARNING BODY */
+
+.warning-body {
+
+  padding:
+    18px;
+
+  display: flex;
+
+  align-items:
+    center;
+
+  gap:
+    18px;
+
+}
+
+
+/* WARNING ICON */
+
+.warning-icon {
+
+  width:
+    75px;
+
+  height:
+    75px;
+
+  flex:
+    0 0 75px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+}
+
+
+/* WARNING IMAGE */
+
+.warning-icon img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit:
+    contain;
+
+  display: block;
+
+}
+
+
+/* WARNING TEXT */
+
+.warning-body p {
+
+  margin: 0;
+
+  font-size:
+    14px;
+
+  font-weight:
+    700;
+
+  line-height:
+    1.6;
+
+}
+
+
+/* ==========================================================
+   CONTACT
+   ========================================================== */
+
+.contact-grid {
+
+  display:
+    grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  align-items:
+    stretch;
+
+}
+
+
+/* CONTACT ITEM */
+
+.contact-item {
+
+  padding:
+    25px 20px;
+
+  text-align:
+    center;
+
+  display:
+    flex;
+
+  flex-direction:
+    column;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  min-height:
+    185px;
+
+}
+
+
+/* CONTACT BORDER */
+
+.contact-item + .contact-item {
+
+  border-left:
+    1px solid var(--line);
+
+}
+
+
+/* ==========================================================
+   CONTACT ICON
+   ========================================================== */
+
+.contact-icon {
+
+  width:
+    50px;
+
+  height:
+    50px;
+
+  border-radius:
+    50%;
+
+  background:
+    var(--light);
+
+  color:
+    var(--navy);
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  margin-bottom:
+    10px;
+
+}
+
+
+/* CONTACT SVG */
+
+.contact-icon svg {
+
+  width:
+    25px;
+
+  height:
+    25px;
+
+  fill:
+    none;
+
+  stroke:
+    currentColor;
+
+  stroke-width:
+    1.7;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+
+}
+
+
+/* CONTACT ROLE */
+
+.contact-role {
+
+  font-size:
+    11px;
+
+  color:
+    var(--muted);
+
+  font-weight:
+    bold;
+
+  text-transform:
+    uppercase;
+
+  letter-spacing:
+    .5px;
+
+}
+
+
+/* CONTACT NAME */
+
+.contact-name {
+
+  font-weight:
+    900;
+
+  font-size:
+    17px;
+
+  margin-top:
+    5px;
+
+  line-height:
+    1.35;
+
+}
+
+
+/* ==========================================================
+   WHATSAPP
+   ========================================================== */
+
+.whatsapp {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  justify-content:
+    center;
+
+  gap:
+    7px;
+
+  margin-top:
+    12px;
+
+  padding:
+    8px 14px;
+
+  border-radius:
+    22px;
+
+  background:
+    var(--green-light);
+
+  text-decoration:
+    none;
+
+  color:
+    var(--green);
+
+  font-weight:
+    900;
+
+  font-size:
+    12px;
+
+  transition:
+    all .2s ease;
+
+}
+
+
+/* WHATSAPP SVG */
+
+.whatsapp-icon {
+
+  width:
+    18px;
+
+  height:
+    18px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+}
+
+
+.whatsapp-icon svg {
+
+  width:
+    18px;
+
+  height:
+    18px;
+
+  fill:
+    none;
+
+  stroke:
+    currentColor;
+
+  stroke-width:
+    1.5;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+
+}
+
+
+/* HOVER */
+
+.whatsapp:hover {
+
+  background:
+    #d9f4e4;
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 4px 10px
+    rgba(21, 148, 71, .12);
+
+}
+
+
+/* ==========================================================
+   FOOTER
+   ========================================================== */
+
+footer {
+
+  position:
+    relative;
+
+  background:
+    linear-gradient(
+      145deg,
+      #092b63,
+      #061f49
+    );
+
+  color:
+    #dcecff;
+
+  text-align:
+    center;
+
+  padding:
+    30px 20px 24px;
+
+  font-size:
+    12px;
+
+}
+
+
+/* FOOTER TITLE */
+
+.footer-title {
+
+  font-weight:
+    900;
+
+  color:
+    white;
+
+  font-size:
+    18px;
+
+  margin-bottom:
+    6px;
+
+}
+
+
+/* FOOTER DESCRIPTION */
+
+.footer-description {
+
+  color:
+    #bcd3ec;
+
+  font-size:
+    12px;
+
+  line-height:
+    1.6;
+
+}
+
+
+/* ==========================================================
+   INSTAGRAM FOOTER
+   ========================================================== */
+
+.instagram-footer {
+
+  display:
+    inline-flex;
+
+  align-items:
+    center;
+
+  gap:
+    10px;
+
+  margin-top:
+    18px;
+
+  padding:
+    10px 17px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.18);
+
+  border-radius:
+    30px;
+
+  background:
+    rgba(255,255,255,.08);
+
+  color:
+    white;
+
+  text-decoration:
+    none;
+
+  font-size:
+    13px;
+
+  font-weight:
+    900;
+
+  transition:
+    all .2s ease;
+
+}
+
+
+/* INSTAGRAM HOVER */
+
+.instagram-footer:hover {
+
+  background:
+    rgba(255,255,255,.15);
+
+  border-color:
+    rgba(255,255,255,.3);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    0 5px 15px
+    rgba(0,0,0,.12);
+
+}
+
+
+/* ==========================================================
+   INSTAGRAM ICON
+   ========================================================== */
+
+.instagram-icon {
+
+  width:
+    28px;
+
+  height:
+    28px;
+
+  display:
+    grid;
+
+  place-items:
+    center;
+
+  border-radius:
+    8px;
+
+  background:
+    white;
+
+}
+
+
+.instagram-icon svg {
+
+  width:
+    18px;
+
+  height:
+    18px;
+
+  fill:
+    none;
+
+  stroke:
+    #c13584;
+
+  stroke-width:
+    1.8;
+
+  stroke-linecap:
+    round;
+
+  stroke-linejoin:
+    round;
+
+}
+
+
+/* INSTAGRAM DOT */
+
+.instagram-icon
+.instagram-dot {
+
+  fill:
+    #c13584;
+
+  stroke:
+    none;
+
+}
+
+
+/* INSTAGRAM LABEL */
+
+.instagram-label {
+
+  letter-spacing:
+    .2px;
+
+}
+
+
+/* INSTAGRAM ARROW */
+
+.instagram-arrow {
+
+  font-size:
+    17px;
+
+  line-height:
+    1;
+
+  opacity:
+    .8;
+
+}
+
+
+/* ==========================================================
+   FOOTER LINE
+   ========================================================== */
+
+.footer-line {
+
+  width:
+    70px;
+
+  height:
+    1px;
+
+  background:
+    rgba(255,255,255,.2);
+
+  margin:
+    20px auto 12px;
+
+}
+
+
+/* ==========================================================
+   FOOTER DATE
+   ========================================================== */
+
+.footer-date {
+
+  color:
+    #9fb8d5;
+
+  font-size:
+    11px;
+
+}
+
+
+/* ==========================================================
+   MOBILE
+   ========================================================== */
+
+@media (max-width: 700px) {
+
+
+  /* HEADER */
+
+  header {
+
+    padding:
+      21px 15px 25px;
+
+  }
+
+
+  /* LOGO */
+
+  .logo {
+
+    width:
+      88px;
+
+    height:
+      88px;
+
+  }
+
+
+  /* TITLE */
+
+  h1 {
+
+    font-size:
+      30px;
+
+  }
+
+
+  /* MAIN */
+
+  main {
+
+    padding:
+      0 13px 22px;
+
+  }
+
+
+  /* INFO */
+
+  .info-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  /* ========================================================
+     CONTACT MOBILE
+     ======================================================== */
+
+  .contact-grid {
+
+    grid-template-columns:
+      1fr;
+
+  }
+
+
+  .contact-item {
+
+    min-height:
+      160px;
+
+    padding:
+      22px 18px;
+
+  }
+
+
+  .contact-item
+  + .contact-item {
+
+    border-left:
+      0;
+
+    border-top:
+      1px solid var(--line);
+
+  }
+
+
+  /* ========================================================
+     WARNING
+     ======================================================== */
+
+  .warning-body {
+
+    align-items:
+      flex-start;
+
+  }
+
+
+  .warning-icon {
+
+    width:
+      65px;
+
+    height:
+      65px;
+
+    flex:
+      0 0 65px;
+
+  }
+
+
+  .warning-body p {
+
+    font-size:
+      13px;
+
+  }
+
+
+  /* ========================================================
+     FOOTER
+     ======================================================== */
+
+  footer {
+
+    padding:
+      27px 15px 22px;
+
+  }
+
+
+  .footer-title {
+
+    font-size:
+      16px;
+
+  }
+
+
+  .instagram-footer {
+
+    margin-top:
+      16px;
+
+  }
+
+
+}
+
+
+/* ==========================================================
+   EXTRA SMALL SCREEN
+   ========================================================== */
+
+@media (max-width: 380px) {
+
+
+  h1 {
+
+    font-size:
+      26px;
+
+  }
+
+
+  .date {
+
+    font-size:
+      17px;
+
+  }
+
+
+  .card-title {
+
+    font-size:
+      16px;
+
+  }
+
+
+  .menu li {
+
+    font-size:
+      15px;
+
+  }
+
+
+  .instagram-label {
+
+    font-size:
+      12px;
+
+  }
+
+
+}
+```
