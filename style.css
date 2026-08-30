@@ -58,7 +58,8 @@ body {
     Helvetica,
     sans-serif;
 
-  color: var(--text);
+  color:
+    var(--text);
 
 }
 
@@ -69,19 +70,24 @@ body {
 
 .page {
 
-  max-width: 980px;
+  max-width:
+    980px;
 
-  margin: auto;
+  margin:
+    auto;
 
-  background: white;
+  background:
+    white;
 
-  min-height: 100vh;
+  min-height:
+    100vh;
 
   box-shadow:
     0 0 35px
     rgba(9, 43, 99, 0.08);
 
-  overflow: hidden;
+  overflow:
+    hidden;
 
 }
 
@@ -92,16 +98,17 @@ body {
 
 header {
 
-  position: relative;
+  position:
+    relative;
 
-  overflow: hidden;
+  overflow:
+    hidden;
 
-  text-align: center;
+  text-align:
+    center;
 
   padding:
-    25px
-    20px
-    28px;
+    25px 20px 28px;
 
   background:
     linear-gradient(
@@ -112,21 +119,27 @@ header {
 }
 
 
-/* NAVY SHAPE */
+/* HEADER NAVY SHAPE */
 
 header::before {
 
-  content: "";
+  content:
+    "";
 
-  position: absolute;
+  position:
+    absolute;
 
-  left: -10%;
+  left:
+    -10%;
 
-  right: -10%;
+  right:
+    -10%;
 
-  top: -115px;
+  top:
+    -115px;
 
-  height: 180px;
+  height:
+    180px;
 
   background:
     var(--navy);
@@ -137,21 +150,27 @@ header::before {
 }
 
 
-/* BLUE LINE */
+/* HEADER BLUE LINE */
 
 header::after {
 
-  content: "";
+  content:
+    "";
 
-  position: absolute;
+  position:
+    absolute;
 
-  left: -8%;
+  left:
+    -8%;
 
-  right: -8%;
+  right:
+    -8%;
 
-  top: -88px;
+  top:
+    -88px;
 
-  height: 165px;
+  height:
+    165px;
 
   border-bottom:
     9px solid #8bc9ef;
@@ -166,9 +185,11 @@ header::after {
 
 .header-content {
 
-  position: relative;
+  position:
+    relative;
 
-  z-index: 2;
+  z-index:
+    2;
 
 }
 
@@ -179,15 +200,20 @@ header::after {
 
 .logo {
 
-  width: 105px;
+  width:
+    105px;
 
-  height: 105px;
+  height:
+    105px;
 
-  object-fit: contain;
+  object-fit:
+    contain;
 
-  margin: auto;
+  margin:
+    auto;
 
-  display: block;
+  display:
+    block;
 
   filter:
     drop-shadow(
@@ -204,25 +230,32 @@ header::after {
 
 .badge {
 
-  display: inline-block;
+  display:
+    inline-block;
 
-  margin-top: 12px;
+  margin-top:
+    12px;
 
   padding:
     7px 15px;
 
-  border-radius: 30px;
+  border-radius:
+    30px;
 
   background:
     var(--navy);
 
-  color: white;
+  color:
+    white;
 
-  font-size: 11px;
+  font-size:
+    11px;
 
-  font-weight: bold;
+  font-weight:
+    bold;
 
-  letter-spacing: 1px;
+  letter-spacing:
+    1px;
 
 }
 
@@ -243,7 +276,8 @@ h1 {
       48px
     );
 
-  line-height: 1.05;
+  line-height:
+    1.05;
 
   color:
     var(--navy);
@@ -263,9 +297,11 @@ h1 {
   margin:
     10px 0 0;
 
-  font-size: 14px;
+  font-size:
+    14px;
 
-  font-weight: bold;
+  font-weight:
+    bold;
 
   color:
     #49627f;
@@ -291,7 +327,8 @@ main {
 
 .card {
 
-  background: white;
+  background:
+    white;
 
   border:
     1px solid var(--line);
@@ -302,7 +339,8 @@ main {
   margin-top:
     18px;
 
-  overflow: hidden;
+  overflow:
+    hidden;
 
   box-shadow:
     0 6px 20px
@@ -320,16 +358,20 @@ main {
   background:
     var(--navy);
 
-  color: white;
+  color:
+    white;
 
   padding:
     14px 18px;
 
-  text-align: center;
+  text-align:
+    center;
 
-  font-size: 18px;
+  font-size:
+    18px;
 
-  font-weight: 900;
+  font-weight:
+    900;
 
 }
 
@@ -338,7 +380,8 @@ main {
 
 .title-icon {
 
-  margin-right: 5px;
+  margin-right:
+    5px;
 
 }
 
@@ -349,16 +392,20 @@ main {
 
 .date-box {
 
-  display: flex;
+  display:
+    flex;
 
-  align-items: center;
+  align-items:
+    center;
 
   justify-content:
     space-between;
 
-  gap: 15px;
+  gap:
+    15px;
 
-  padding: 17px;
+  padding:
+    17px;
 
   background:
     var(--light);
@@ -369,7 +416,8 @@ main {
   border-radius:
     18px;
 
-  margin-top: 0;
+  margin-top:
+    0;
 
 }
 
@@ -378,9 +426,11 @@ main {
 
 .date-label {
 
-  font-size: 11px;
+  font-size:
+    11px;
 
-  font-weight: bold;
+  font-weight:
+    bold;
 
   color:
     var(--muted);
@@ -398,14 +448,17 @@ main {
 
 .date {
 
-  font-size: 20px;
+  font-size:
+    20px;
 
-  font-weight: 900;
+  font-weight:
+    900;
 
   color:
     var(--navy);
 
-  margin-top: 3px;
+  margin-top:
+    3px;
 
 }
 
@@ -414,21 +467,26 @@ main {
 
 .date-icon {
 
-  width: 50px;
+  width:
+    50px;
 
-  height: 50px;
+  height:
+    50px;
 
   background:
     var(--navy);
 
-  color: white;
+  color:
+    white;
 
   border-radius:
     14px;
 
-  display: grid;
+  display:
+    grid;
 
-  place-items: center;
+  place-items:
+    center;
 
 }
 
@@ -437,19 +495,26 @@ main {
 
 .date-icon svg {
 
-  width: 25px;
+  width:
+    25px;
 
-  height: 25px;
+  height:
+    25px;
 
-  fill: none;
+  fill:
+    none;
 
-  stroke: currentColor;
+  stroke:
+    currentColor;
 
-  stroke-width: 1.8;
+  stroke-width:
+    1.8;
 
-  stroke-linecap: round;
+  stroke-linecap:
+    round;
 
-  stroke-linejoin: round;
+  stroke-linejoin:
+    round;
 
 }
 
@@ -460,13 +525,17 @@ main {
 
 .menu {
 
-  padding: 0;
+  padding:
+    0;
 
-  margin: 0;
+  margin:
+    0;
 
-  list-style: none;
+  list-style:
+    none;
 
-  counter-reset: item;
+  counter-reset:
+    item;
 
 }
 
@@ -475,13 +544,17 @@ main {
 
 .menu li {
 
-  counter-increment: item;
+  counter-increment:
+    item;
 
-  display: flex;
+  display:
+    flex;
 
-  align-items: center;
+  align-items:
+    center;
 
-  gap: 14px;
+  gap:
+    14px;
 
   padding:
     15px 18px;
@@ -489,18 +562,34 @@ main {
   border-bottom:
     1px solid #e7eef6;
 
-  font-size: 17px;
+  font-size:
+    17px;
 
-  font-weight: 800;
+  font-weight:
+    800;
+
+  transition:
+    background .2s ease;
 
 }
 
 
-/* LAST */
+/* MENU HOVER */
+
+.menu li:hover {
+
+  background:
+    #f8fbff;
+
+}
+
+
+/* LAST MENU ITEM */
 
 .menu li:last-child {
 
-  border-bottom: 0;
+  border-bottom:
+    0;
 
 }
 
@@ -509,16 +598,20 @@ main {
 
 .menu-number {
 
-  width: 35px;
+  width:
+    35px;
 
-  height: 35px;
+  height:
+    35px;
 
   flex:
     0 0 35px;
 
-  display: grid;
+  display:
+    grid;
 
-  place-items: center;
+  place-items:
+    center;
 
   background:
     var(--light);
@@ -526,11 +619,14 @@ main {
   color:
     var(--navy);
 
-  border-radius: 50%;
+  border-radius:
+    50%;
 
-  font-size: 14px;
+  font-size:
+    14px;
 
-  font-weight: 900;
+  font-weight:
+    900;
 
 }
 
@@ -549,7 +645,8 @@ main {
 
 .menu-text {
 
-  line-height: 1.4;
+  line-height:
+    1.4;
 
 }
 
@@ -560,7 +657,8 @@ main {
 
 .table-wrapper {
 
-  overflow-x: auto;
+  overflow-x:
+    auto;
 
 }
 
@@ -569,7 +667,8 @@ main {
 
 table {
 
-  width: 100%;
+  width:
+    100%;
 
   border-collapse:
     collapse;
@@ -597,7 +696,7 @@ td {
 }
 
 
-/* HEADER */
+/* TABLE HEADER */
 
 th {
 
@@ -613,7 +712,7 @@ th {
 }
 
 
-/* DATA */
+/* TABLE DATA */
 
 td {
 
@@ -649,7 +748,8 @@ td:first-child {
   padding:
     0 18px 16px;
 
-  margin: 0;
+  margin:
+    0;
 
   font-size:
     11px;
@@ -659,6 +759,9 @@ td:first-child {
 
   font-style:
     italic;
+
+  line-height:
+    1.5;
 
 }
 
@@ -704,6 +807,9 @@ td:first-child {
   color:
     var(--navy);
 
+  line-height:
+    1.3;
+
 }
 
 
@@ -726,7 +832,7 @@ td:first-child {
 }
 
 
-/* DESCRIPTION */
+/* INFO DESCRIPTION */
 
 .info-description {
 
@@ -773,7 +879,8 @@ td:first-child {
   background:
     var(--red);
 
-  color: white;
+  color:
+    white;
 
   padding:
     13px 16px;
@@ -794,7 +901,8 @@ td:first-child {
   padding:
     18px;
 
-  display: flex;
+  display:
+    flex;
 
   align-items:
     center;
@@ -831,14 +939,17 @@ td:first-child {
 
 .warning-icon img {
 
-  width: 100%;
+  width:
+    100%;
 
-  height: 100%;
+  height:
+    100%;
 
   object-fit:
     contain;
 
-  display: block;
+  display:
+    block;
 
 }
 
@@ -847,7 +958,8 @@ td:first-child {
 
 .warning-body p {
 
-  margin: 0;
+  margin:
+    0;
 
   font-size:
     14px;
@@ -1067,7 +1179,7 @@ td:first-child {
 }
 
 
-/* WHATSAPP SVG */
+/* WHATSAPP ICON */
 
 .whatsapp-icon {
 
@@ -1112,7 +1224,7 @@ td:first-child {
 }
 
 
-/* HOVER */
+/* WHATSAPP HOVER */
 
 .whatsapp:hover {
 
@@ -1290,6 +1402,8 @@ footer {
 
 }
 
+
+/* INSTAGRAM SVG */
 
 .instagram-icon svg {
 
