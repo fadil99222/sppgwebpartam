@@ -1,4 +1,4 @@
-
+```html
 <!DOCTYPE html>
 <html lang="id">
 
@@ -100,6 +100,12 @@
 
           tanggal: "31 Agustus 2026",
 
+
+          /* =================================================
+             MENU MAKANAN
+             SEKARANG MENJADI 5 MENU
+             ================================================= */
+
           menu: [
 
             "Nasi goreng",
@@ -108,10 +114,16 @@
 
             "Tempe bayam",
 
-            "Tumis Labu Siam dan Wortel"
+            "Tumis Labu Siam dan Wortel",
+
+            "Pisang"
 
           ],
 
+
+          /* =================================================
+             KANDUNGAN GIZI
+             ================================================= */
 
           gizi: {
 
@@ -185,9 +197,17 @@
           },
 
 
+          /* =================================================
+             BATAS KONSUMSI
+             ================================================= */
+
           batasKonsumsi:
             "Maks. 2 jam setelah diterima",
 
+
+          /* =================================================
+             KONTAK
+             ================================================= */
 
           kontak: {
 
@@ -240,8 +260,6 @@
 
         <div class="date-icon">
 
-          <!-- Calendar SVG -->
-
           <svg
             viewBox="0 0 24 24"
             aria-hidden="true"
@@ -285,7 +303,7 @@
 
 
       <!-- ===================================================
-           MENU
+           MENU HARI INI
            =================================================== -->
 
       <section class="card">
@@ -550,7 +568,9 @@
         <div class="contact-grid">
 
 
-          <!-- ================= ASISTEN ================= -->
+          <!-- =================================================
+               ASISTEN LAPANGAN
+               ================================================= -->
 
           <div class="contact-item">
 
@@ -597,6 +617,7 @@
             >
 
               <span class="whatsapp-icon">
+
                 <svg
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -607,15 +628,18 @@
                   />
 
                   <path
-                    d="M8.5 8.5c.3-.5.7-.5 1-.2l1 1.2c.2.2.2.5 0 .8l-.5.6c.6 1 1.3 1.7 2.4 2.2l.6-.5c.3-.2.6-.2.8 0l1.2.9c.3.2.3.7 0 1-.4.5-1 .7-1.6.5-2.1-.7-4.4-3-5.1-5.1-.2-.5 0-1 .2-1.4Z"
+                    d="M8.5 8.5c.3-.5.7-.5 1-.2l1 1.2c.2.2.2.5 0 .8l-.5.6c.6 1 1.3 1.7 2.4 2.2l.6-.5c.3-.2.6-.2.8 0l1.2.9c.3.2.3.7 0 1-.4.5-1 .7-1.6.5-2.1-.7-.7-1.5-1.2-2.5-1.7Z"
                   />
 
                 </svg>
+
               </span>
+
 
               <span>
                 WhatsApp
               </span>
+
 
               <span>
                 →
@@ -628,7 +652,9 @@
 
 
 
-          <!-- ================= AHLI GIZI ================= -->
+          <!-- =================================================
+               AHLI GIZI
+               ================================================= -->
 
           <div class="contact-item">
 
@@ -640,14 +666,12 @@
                 aria-hidden="true"
               >
 
-                <circle
-                  cx="12"
-                  cy="8"
-                  r="4"
+                <path
+                  d="M12 21c-4.5-3-7-6.2-7-10.2C5 7.2 7.5 5 10 6.5c1 .6 1.6 1.5 2 2.5.4-1 1-1.9 2-2.5C16.5 5 19 7.2 19 10.8c0 4-2.5 7.2-7 10.2Z"
                 />
 
                 <path
-                  d="M4 21c0-4.2 3.6-7 8-7s8 2.8 8 7"
+                  d="M12 9c-1.5 2-2 4.2-2 7"
                 />
 
               </svg>
@@ -686,16 +710,18 @@
                   />
 
                   <path
-                    d="M8.5 8.5c.3-.5.7-.5 1-.2l1 1.2c.2.2.2.5 0 .8l-.5.6c.6 1 1.3 1.7 2.4 2.2l.6-.5c.3-.2.6-.2.8 0l1.2.9c.3.2.3.7 0 1-.4.5-1 .7-1.6.5-2.1-.7-4.4-3-5.1-5.1-.2-.5 0-1 .2-1.4Z"
+                    d="M8.5 8.5c.3-.5.7-.5 1-.2l1 1.2c.2.2.2.5 0 .8l-.5.6c.6 1 1.3 1.7 2.4 2.2l.6-.5c.3-.2.6-.2.8 0l1.2.9c.3.2.3.7 0 1-.4.5-1 .7-1.6.5-2.1-.7-.7-1.5-1.2-2.5-1.7Z"
                   />
 
                 </svg>
 
               </span>
 
+
               <span>
                 WhatsApp
               </span>
+
 
               <span>
                 →
@@ -837,7 +863,8 @@
        DATA
        ===================================================== */
 
-    const d = DATA_HARI_INI;
+    const d =
+      DATA_HARI_INI;
 
 
 
@@ -977,12 +1004,21 @@
        WHATSAPP ASISTEN
        ===================================================== */
 
-    document.getElementById("nomorAsisten").href =
+    const nomorAsisten =
+      document.getElementById("nomorAsisten");
+
+
+    nomorAsisten.href =
       "https://wa.me/" +
       d.kontak.asisten.nomor.replace(/\D/g, "");
 
 
-    document.getElementById("nomorAsisten").querySelector(
+    nomorAsisten.querySelector(
+      ".whatsapp-number"
+    );
+
+
+    nomorAsisten.querySelector(
       "span:nth-child(2)"
     ).textContent =
       d.kontak.asisten.nomor;
@@ -993,12 +1029,16 @@
        WHATSAPP AHLI GIZI
        ===================================================== */
 
-    document.getElementById("nomorAhliGizi").href =
+    const nomorAhliGizi =
+      document.getElementById("nomorAhliGizi");
+
+
+    nomorAhliGizi.href =
       "https://wa.me/" +
       d.kontak.ahliGizi.nomor.replace(/\D/g, "");
 
 
-    document.getElementById("nomorAhliGizi").querySelector(
+    nomorAhliGizi.querySelector(
       "span:nth-child(2)"
     ).textContent =
       d.kontak.ahliGizi.nomor;
